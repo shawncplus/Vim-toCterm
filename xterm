@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+require_once(dirname(__FILE__) . '/lib/Xterm.php');
+$i = trim($argv[1]);
+echo (strlen($i) == 6 ? Xterm::htmlToSgr($i) : ('#'.join('', array_map('mydechex', Xterm::xterm2rgb(trim($i))))))."\n";   
+
+function mydechex($in)
+{
+	$in=dechex($in);
+	return strlen($in) < 2 ? '0' . $in : $in;
+}
