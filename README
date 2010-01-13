@@ -2,6 +2,7 @@ Vim-toCterm is a set of tools to add cterm support to color schemes without the 
 
 Usage:
 1. Open the color scheme to convert in Vim
-2. ESC :so <path to Vim-toCterm>/tocterm.vim
-3. ???
-4. Profit
+2. Place 'xterm' in your executable path
+3. ESC :so <path to Vim-toCterm>/tocterm.vim
+4. ???
+5. Profit
