@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-require_once(dirname(__FILE__) . '/lib/Xterm.php');
+require_once(dirname(__FILE__) . '/Xterm.php');
 
 echo Xterm::htmlToSgr($argv[1]);
 ?>
