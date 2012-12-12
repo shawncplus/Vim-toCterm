@@ -127,3 +127,4 @@ class Xterm
 		return $best_match;
 	}
 }
+?>
